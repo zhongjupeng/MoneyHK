@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:key="sysSetting" android:title="系统设置">
+        <EditTextPreference android:key="editSetting" android:title="设定密码保护"
+                            android:summary="请设定密码，空则为无密码保护"
+                            android:dialogTitle="输入密码"/>
+
+
+    </PreferenceCategory>
+</PreferenceScreen>

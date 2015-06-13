@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:background="#ffff1d2e"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp">
+        <ImageButton
+            android:id="@+id/imAccountListBack"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/back_button_selector"
+            android:layout_width="43dp"
+            android:layout_height="43dp"/>
+        <TextView
+            android:layout_toRightOf="@id/imAccountListBack"
+            android:layout_marginLeft="4dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="收支明细"
+            />
+    </RelativeLayout>
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:id="@+id/lvAccountList"
+        android:layout_weight="1"
+
+        />
+
+</LinearLayout>

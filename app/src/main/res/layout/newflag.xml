@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:weightSum="1">
+
+    <RelativeLayout
+        android:background="#ffff1d2e"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp">
+        <ImageButton
+            android:id="@+id/imNewFlagBack"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/back_button_selector"
+            android:layout_width="43dp"
+            android:layout_height="43dp"/>
+        <TextView
+            android:layout_toRightOf="@id/imNewFlagBack"
+            android:layout_marginLeft="4dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="新建便签"
+            />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tvFlagTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="2015年5月12日 19:25"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/etFalg"
+        android:layout_margin="10dp"
+        android:hint="输入最多不超过500字"
+        android:maxLength="500"
+        android:textSize="20sp"
+        android:layout_weight="0.99"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+            <ImageButton
+                android:id="@+id/imbSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/ic_menu_save"
+                android:layout_centerHorizontal="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="保存"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/imbSave"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+            <ImageButton
+                android:id="@+id/imbCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/ic_menu_close_clear_cancel"
+                android:layout_centerHorizontal="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="取消"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/imbCancel"
+                />
+        </RelativeLayout>
+        </LinearLayout>
+
+
+</LinearLayout>

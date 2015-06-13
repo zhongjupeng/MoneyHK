@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="intype">
+        <item>薪水</item>
+        <item>奖金</item>
+        <item>捡钱</item>
+        <item>中彩票</item>
+        <item>自定义</item>
+    </string-array>
+
+    <string-array name="outtype">
+        <item>请客</item>
+        <item>衣服</item>
+        <item>吃饭</item>
+        <item>掉钱</item>
+        <item>自定义</item>
+
+    </string-array>
+</resources>

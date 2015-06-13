@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+               android:layout_height="fill_parent"
+               android:layout_width="fill_parent"
+               android:orientation="vertical"
+               android:background="@drawable/background"
+               android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="180sp"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/main_top_month_report_bg"
+       >
+
+        <RelativeLayout
+            android:padding="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvMainMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5 "
+                android:textColor="#ffff1207"
+                android:textSize="25sp"
+                />
+            <TextView
+                android:id="@+id/tvMainYear"
+                android:layout_toRightOf="@+id/tvMainMonth"
+                android:layout_alignBottom="@id/tvMainMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/ 2015"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            >
+
+            <TextView
+                android:id="@+id/tvIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="收入总额："
+                />
+            <TextView
+                android:id="@+id/inAccount_sum"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tvIn"
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/background_dark"
+                android:textSize="20sp"
+                android:text="$0.00"
+                />
+        </RelativeLayout>
+       <View
+           android:layout_width="fill_parent"
+           android:layout_height="1dp"
+           android:background="#ff3e3e3e"
+           android:layout_margin="10dp"
+           />
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            >
+
+            <TextView
+                android:id="@+id/tvOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="支出总额："
+                />
+            <TextView
+                android:id="@+id/outAccount_sum"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tvOut"
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/background_dark"
+                android:textSize="20sp"
+                android:text="$0.00"
+                />
+        </RelativeLayout>
+
+        </LinearLayout>
+    <GridView
+        android:id="@+id/gvInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnWidth="90dp"
+        android:numColumns="auto_fit"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:stretchMode="spacingWidthUniform"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="10dp"
+       />
+
+
+</RelativeLayout>
+
+
+
